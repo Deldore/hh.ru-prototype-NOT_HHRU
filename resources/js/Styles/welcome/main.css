@@ -1,0 +1,146 @@
+main {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+main .item {
+    display: flex;
+    padding: 25px 30px;
+    background: white;
+    margin: 5px 15px;
+    border-radius: 15px;
+    align-items: start;
+    flex-direction: column;
+}
+main .item h1 {
+    font-size: 2.2rem;
+}
+.first-block {
+    width: 60%;
+    height: 100%;
+}
+.second-block {
+    width: 40%;
+}
+
+
+.resume {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center !important;
+}
+
+.resume h2 {
+    font-size: 1.5rem;
+}
+
+.resume p {
+    margin-top: 15px;
+    color: #333;
+}
+
+.small_round span {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 1000;
+    color: white;
+    align-self: center;
+}
+.small_round {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: #9BB;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.comment {
+    margin-top: 20px;
+    padding: 15px 30px;
+    text-align: left;
+    color: white;
+    background: #777;
+    width: 100%;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.comment a {
+    color: #99CCCC;
+}
+
+.commentNavigation {
+    align-self: start;
+    margin-bottom: 10px;
+    margin-left: -5px;
+    display: flex;
+    flex-direction: row !important;
+}
+.xs-round {
+    background: red;
+    margin: 0 5px;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+.search {
+    padding: 0 0 0 5px;
+    margin-top: 25px;
+    display: flex;
+    height: 30px;
+    border: 1px solid black;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.search img {
+    width: 20px;
+}
+.search input {
+    border: none;
+    width: 60%;
+    outline:none;
+}
+.search button {
+    background: #99CCCC;
+    width: 30%;
+}
+
+.startButton {
+    width: 100%;
+    justify-content: center;
+    margin-top: 25px;
+    display: none;
+}
+.startButton button {
+    background: #99CCCC;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .first-block, .second-block {
+        width: 100%;
+    }
+    .item {
+        width: 100%;
+    }
+    .search {
+        display: none;
+    }
+    .startButton {
+        display: block;
+    }
+}
+

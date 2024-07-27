@@ -1,0 +1,51 @@
+body {
+    color: black;
+    padding: 0;
+    background: #CFF;
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 15px;
+    margin-bottom: 5px;
+    width: 20vw;
+    min-width: 300px;
+}
+
+form {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-self: center;
+    padding: 30px 30px 10px 30px;
+    background: white;
+    border-radius: 30px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+button {
+    align-self: flex-start;
+    margin: 15px 0;
+    padding: 5px 15px;
+    background: #9CC;
+    border-radius: 5px;
+    font-weight: 600;
+}
+span {
+    font-size: 0.8rem;
+    color: red;
+}
