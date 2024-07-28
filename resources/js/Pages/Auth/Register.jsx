@@ -2,6 +2,7 @@ import { Head, Link, useForm } from '@inertiajs/react';
 import "@/Styles/login.css";
 import {useState, useEffect} from "react";
 import Loader from "@/Components/Loader.jsx";
+import BackButton from "@/Components/BackButton.jsx";
 
 export default function Register() {
     const [formData, setFormData] = useState({
@@ -45,7 +46,10 @@ export default function Register() {
                 {isLoaded ? (
                     <div>
                         <form>
-                            <h1>Регистрация</h1>
+                            <div style={{height: "auto", justifyContent: "start"}}>
+                                <BackButton/>
+                                <h1>Регистрация</h1>
+                            </div>
                             <label htmlFor="name">Введите Ваше имя:</label>
                             <input type="text" name='name'
                                    onChange={(e) => setFormData({...formData, name: e.target.value})}

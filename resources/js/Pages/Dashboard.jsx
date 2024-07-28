@@ -1,10 +1,11 @@
 import { Head } from '@inertiajs/react';
 import Logout from "@/Components/Logout.jsx";
+import Header from "@/Components/Header.jsx";
 
 export default function Dashboard({ auth }) {
-    console.log(auth);
     return (
-        <div>
+        <>
+            <Header auth={auth}></Header>
             {(auth.user) ? (
                 <div>
                     <h1>You're logged in</h1>
@@ -13,6 +14,6 @@ export default function Dashboard({ auth }) {
             ) : (
                 <h1>U r not logged in</h1>
             )}
-        </div>
+        </>
     );
 }

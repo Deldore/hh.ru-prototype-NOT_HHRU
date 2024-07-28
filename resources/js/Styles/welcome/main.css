@@ -12,6 +12,7 @@ main .item {
     border-radius: 15px;
     align-items: start;
     flex-direction: column;
+    box-shadow: #99CCCC 10px 10px 10px;
 }
 main .item h1 {
     font-size: 2.2rem;

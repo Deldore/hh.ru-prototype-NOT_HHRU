@@ -23,3 +23,7 @@ header div {
     display: flex;
     align-items: center;
 }
+header nav {
+    justify-content: left !important;
+    align-content: start !important;
+}

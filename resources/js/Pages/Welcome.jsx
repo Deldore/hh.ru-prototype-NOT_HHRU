@@ -1,29 +1,15 @@
 import {Link, Head, router} from '@inertiajs/react';
-import '@/Styles/welcome/style.css';
-import logo from '@/../images/logo.png';
+import '@/Styles/style.css';
+import '@/Styles/welcome/main.css'
 import search from '@/../images/icons/icons8-search.svg'
 import Logout from "@/Components/Logout.jsx";
+import Header from "@/Components/Header.jsx";
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     return (
         <>
-            <Head title="Главная" />
-            <header>
-                <div>
-                    <img src={logo}/>
-                    <h1 className={"lg:block"}>NOT HH.RU</h1>
-                </div>
-                <nav>
-                    {auth.user ? (
-                        <Logout></Logout>
-                    ) : (
-                        <>
-                            <Link href={route('login')}>Авторизация</Link>
-                            <Link href={route('register')}>Регистрация</Link>
-                        </>
-                    )}
-                </nav>
-            </header>
+            <Head title="Главная"/>
+            <Header auth={auth}/>
             <main className="">
                 <div className="item first-block">
                     <h1>Ищете работу?</h1>

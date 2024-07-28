@@ -2,6 +2,7 @@ import { Head, Link, useForm } from '@inertiajs/react';
 import {useState} from "react";
 import "@/Styles/login.css"
 import Loader from "@/Components/Loader.jsx";
+import BackButton from "@/Components/BackButton.jsx";
 
 export default function Login({ status, canResetPassword }) {
 
@@ -44,7 +45,10 @@ export default function Login({ status, canResetPassword }) {
                 {isLoaded ? (
                     <div>
                         <form>
-                            <h1>Авторизация</h1>
+                            <div style={{height: "auto", justifyContent: "start"}}>
+                                <BackButton />
+                                <h1>Авторизация</h1>
+                            </div>
                             <label htmlFor="email">Почта:</label>
                             <input type="text" name="email"
                                    onChange={(e) => setFormData({...formData, email: e.target.value})}
